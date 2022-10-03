@@ -1,9 +1,9 @@
 // trigger to play music in the background with sweetalert
 window.addEventListener('load', () => {
   Swal.fire({
-    title: 'Do you love me?',
+    title: 'Diana, do you love me?',
     // text: "You won't be able to revert this!",
-    icon: 'warning',
+    icon: 'question',
     showCancelButton: true,
     confirmButtonColor: '#3085d6',
     cancelButtonColor: '#d33',
@@ -14,11 +14,15 @@ window.addEventListener('load', () => {
       document.querySelector('.song').play();
       resolveFetch().then(animationTimeline());
     } else {
-      resolveFetch().then(animationTimeline());
+      Swal.fire(
+  'Are you kidding me ?',
+  'You must love me &#128298 &#128298 &#128298;',
+  'warning'
+)
+      .then((result) => {window.location.href = "https://arais98-cool.github.io/mumu/"});
     }
   });
 });
-
 
 // animation timeline
 const animationTimeline = () => {
