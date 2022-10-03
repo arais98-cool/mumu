@@ -19,7 +19,7 @@ window.addEventListener('load', () => {
   'You must love me &#128298 &#128298 &#128298;',
   'warning'
 )
-      .then((result) => {window.location.href = "https://arais98-cool.github.io/mumu/"});
+      .then((result) => {window.location.href = "https://araisjr.github.io/mumu/"});
     }
   });
 });
