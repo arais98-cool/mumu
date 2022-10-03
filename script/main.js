@@ -15,7 +15,7 @@ window.addEventListener('load', () => {
       resolveFetch().then(animationTimeline());
     } else {
       Swal.fire(
-  'Are you kidding me ?',
+  'Are you kidding me &#128545; ?',
   'You must love me &#128298 &#128298 &#128298;',
   'warning'
 )
